@@ -18,10 +18,10 @@
 
     <!-- Custom Styles -->
     <style>
-        /* Slide background colors */
         section {
             color: #ffffff;
             font-family: 'Arial', sans-serif;
+            padding: 2em;
         }
         section:nth-child(odd) {
             background-color: #1e1e2f;
@@ -47,7 +47,6 @@
             font-size: 1em;
         }
 
-        /* Footer with email */
         footer {
             position: absolute;
             bottom: 10px;
@@ -68,7 +67,7 @@
                 <p>Email: 23f2003735@ds.study.iitm.ac.in</p>
                 <footer>Contact: 23f2003735@ds.study.iitm.ac.in</footer>
                 <aside class="notes">
-                    Introduce yourself, your role, and the purpose of this report.
+                    Introduce yourself and the purpose of the report.
                 </aside>
             </section>
 
@@ -81,7 +80,7 @@
 - Market share increase: 3%
                 </textarea>
                 <aside class="notes">
-                    Discuss the top three metrics. Each bullet point can be emphasized using fragments if needed.
+                    Explain the top three key metrics.
                 </aside>
             </section>
 
@@ -92,7 +91,7 @@
                 <p class="fragment">Net profit reached ₹5.2 Crore</p>
                 <p class="fragment">Market share grew by 3%</p>
                 <aside class="notes">
-                    Emphasize each point with animation. Encourage stakeholders to focus on these numbers.
+                    Highlight each metric one by one with animation.
                 </aside>
             </section>
 
@@ -107,7 +106,7 @@ profit = revenue - expenses
 print(profit)
                 </code></pre>
                 <aside class="notes">
-                    Explain how net profit is calculated programmatically. Show this as an example for analytics.
+                    Show how net profit is calculated using Python.
                 </aside>
             </section>
 
@@ -116,7 +115,7 @@ print(profit)
                 <h2>Financial Formula</h2>
                 <p>\( \text{Net Profit} = \text{Revenue} - \text{Expenses} \)</p>
                 <aside class="notes">
-                    Highlight the formula and explain each term. Link it back to the code example.
+                    Explain the formula and link it to the code example.
                 </aside>
             </section>
 
@@ -124,9 +123,9 @@ print(profit)
             <section>
                 <h2>Contact & Acknowledgments</h2>
                 <p>Email: 23f2003735@ds.study.iitm.ac.in</p>
-                <p>Prepared by: Your Name</p>
+                <p>Prepared by: Dhruv Dabholkar</p>
                 <aside class="notes">
-                    Provide your email and acknowledge collaborators or sources if any.
+                    Provide contact information and acknowledge collaborators.
                 </aside>
             </section>
 
@@ -137,22 +136,16 @@ print(profit)
     <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
 
     <!-- Plugins -->
-    <script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.esm.js" type="module"></script>
-    <script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.esm.js" type="module"></script>
-    <script src="https://unpkg.com/reveal.js/plugin/math/math.esm.js" type="module"></script>
+    <script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="https://unpkg.com/reveal.js/plugin/math/math.js"></script>
 
     <!-- Initialize RevealJS -->
-    <script type="module">
-        import Reveal from 'https://unpkg.com/reveal.js/dist/reveal.esm.js';
-        import RevealMarkdown from 'https://unpkg.com/reveal.js/plugin/markdown/markdown.esm.js';
-        import RevealHighlight from 'https://unpkg.com/reveal.js/plugin/highlight/highlight.esm.js';
-        import RevealMath from 'https://unpkg.com/reveal.js/plugin/math/math.esm.js';
-
-        const deck = new Reveal(document.querySelector('.reveal'), {
+    <script>
+        Reveal.initialize({
             hash: true,
             plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
         });
-        deck.initialize();
     </script>
 </body>
 </html>
