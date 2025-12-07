@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RevealJS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme">
+
+    <!-- Highlight.js for code -->
+    <link rel="stylesheet" href="https://unpkg.com/highlight.js/styles/monokai.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Quarterly Earnings Report</h1>
+                <p>Contact: 23f2003735@ds.study.iitm.ac.in</p>
+            </section>
+
+            <section>
+                <h2>Markdown Slide</h2>
+                <textarea data-template>
+## Key Highlights
+- Revenue growth: 12%
+- Net profit: ₹5.2 Crore
+- Market share increase: 3%
+                </textarea>
+            </section>
+
+            <section>
+                <h2>Animated Elements</h2>
+                <p class="fragment">Revenue increased by 12%</p>
+                <p class="fragment">Net profit reached ₹5.2 Crore</p>
+                <p class="fragment">Market share grew by 3%</p>
+            </section>
+
+            <section>
+                <h2>Code Sample</h2>
+                <pre><code class="python">
+# Python example
+revenue = 1200000
+expenses = 950000
+profit = revenue - expenses
+print(profit)
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Financial Equation</h2>
+                <p>\( \text{Net Profit} = \text{Revenue} - \text{Expenses} \)</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+        });
+    </script>
+</body>
+</html>
