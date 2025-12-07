@@ -83,15 +83,21 @@ print(profit)
     <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
 
     <!-- Plugins -->
-    <script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
-    <script src="https://unpkg.com/reveal.js/plugin/math/math.js"></script>
+    <script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.esm.js" type="module"></script>
+    <script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.esm.js" type="module"></script>
+    <script src="https://unpkg.com/reveal.js/plugin/math/math.esm.js" type="module"></script>
 
-    <script>
-        Reveal.initialize({
+    <script type="module">
+        import Reveal from 'https://unpkg.com/reveal.js/dist/reveal.esm.js';
+        import RevealMarkdown from 'https://unpkg.com/reveal.js/plugin/markdown/markdown.esm.js';
+        import RevealHighlight from 'https://unpkg.com/reveal.js/plugin/highlight/highlight.esm.js';
+        import RevealMath from 'https://unpkg.com/reveal.js/plugin/math/math.esm.js';
+
+        const deck = new Reveal(document.querySelector('.reveal'), {
             hash: true,
             plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
         });
+        deck.initialize();
     </script>
 </body>
 </html>
