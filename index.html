@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Quarterly Earnings Report</title>
+    <title>Quarterly Earnings Report - 23f2003735@ds.study.iitm.ac.in</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="23f2003735@ds.study.iitm.ac.in">
 
     <!-- RevealJS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
@@ -14,6 +15,48 @@
 
     <!-- KaTeX CSS for math -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        /* Slide background colors */
+        section {
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+        section:nth-child(odd) {
+            background-color: #1e1e2f;
+        }
+        section:nth-child(even) {
+            background-color: #2e3b4e;
+        }
+
+        h1, h2, h3 {
+            color: #ffcc00;
+        }
+
+        p, li {
+            font-size: 1.2em;
+        }
+
+        .fragment {
+            color: #00ffcc;
+            font-weight: bold;
+        }
+
+        pre code {
+            font-size: 1em;
+        }
+
+        /* Footer with email */
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9em;
+            color: #cccccc;
+        }
+    </style>
 </head>
 <body>
     <div class="reveal">
@@ -23,8 +66,9 @@
             <section>
                 <h1>Quarterly Earnings Report</h1>
                 <p>Email: 23f2003735@ds.study.iitm.ac.in</p>
+                <footer>Contact: 23f2003735@ds.study.iitm.ac.in</footer>
                 <aside class="notes">
-                    Introduce yourself and the agenda for the presentation.
+                    Introduce yourself, your role, and the purpose of this report.
                 </aside>
             </section>
 
@@ -37,7 +81,7 @@
 - Market share increase: 3%
                 </textarea>
                 <aside class="notes">
-                    Discuss the top three metrics that matter to stakeholders.
+                    Discuss the top three metrics. Each bullet point can be emphasized using fragments if needed.
                 </aside>
             </section>
 
@@ -48,7 +92,7 @@
                 <p class="fragment">Net profit reached ₹5.2 Crore</p>
                 <p class="fragment">Market share grew by 3%</p>
                 <aside class="notes">
-                    Use animation to emphasize each key metric one by one.
+                    Emphasize each point with animation. Encourage stakeholders to focus on these numbers.
                 </aside>
             </section>
 
@@ -56,14 +100,14 @@
             <section>
                 <h2>Profit Calculation Example</h2>
                 <pre><code class="python">
-# Python example for profit calculation
+# Python example
 revenue = 1200000
 expenses = 950000
 profit = revenue - expenses
 print(profit)
                 </code></pre>
                 <aside class="notes">
-                    Explain the basic revenue-expense-profit calculation using code.
+                    Explain how net profit is calculated programmatically. Show this as an example for analytics.
                 </aside>
             </section>
 
@@ -72,7 +116,17 @@ print(profit)
                 <h2>Financial Formula</h2>
                 <p>\( \text{Net Profit} = \text{Revenue} - \text{Expenses} \)</p>
                 <aside class="notes">
-                    Highlight the formula that stakeholders can easily understand.
+                    Highlight the formula and explain each term. Link it back to the code example.
+                </aside>
+            </section>
+
+            <!-- Slide 6: Contact / Footer -->
+            <section>
+                <h2>Contact & Acknowledgments</h2>
+                <p>Email: 23f2003735@ds.study.iitm.ac.in</p>
+                <p>Prepared by: Your Name</p>
+                <aside class="notes">
+                    Provide your email and acknowledge collaborators or sources if any.
                 </aside>
             </section>
 
@@ -87,6 +141,7 @@ print(profit)
     <script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.esm.js" type="module"></script>
     <script src="https://unpkg.com/reveal.js/plugin/math/math.esm.js" type="module"></script>
 
+    <!-- Initialize RevealJS -->
     <script type="module">
         import Reveal from 'https://unpkg.com/reveal.js/dist/reveal.esm.js';
         import RevealMarkdown from 'https://unpkg.com/reveal.js/plugin/markdown/markdown.esm.js';
