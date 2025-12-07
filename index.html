@@ -9,53 +9,84 @@
     <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
     <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme">
 
-    <!-- Highlight.js for code -->
+    <!-- Highlight.js CSS -->
     <link rel="stylesheet" href="https://unpkg.com/highlight.js/styles/monokai.css">
+
+    <!-- KaTeX CSS for math -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
+
+            <!-- Slide 1: Title -->
             <section>
                 <h1>Quarterly Earnings Report</h1>
                 <p>Contact: 23f2003735@ds.study.iitm.ac.in</p>
+                <aside class="notes">
+                    Introduce yourself and the agenda for the presentation.
+                </aside>
             </section>
 
-            <section>
-                <h2>Markdown Slide</h2>
+            <!-- Slide 2: Markdown slide -->
+            <section data-markdown>
                 <textarea data-template>
 ## Key Highlights
 - Revenue growth: 12%
 - Net profit: ₹5.2 Crore
 - Market share increase: 3%
                 </textarea>
+                <aside class="notes">
+                    Discuss the top three metrics that matter to stakeholders.
+                </aside>
             </section>
 
+            <!-- Slide 3: Animated fragments -->
             <section>
-                <h2>Animated Elements</h2>
+                <h2>Performance Highlights</h2>
                 <p class="fragment">Revenue increased by 12%</p>
                 <p class="fragment">Net profit reached ₹5.2 Crore</p>
                 <p class="fragment">Market share grew by 3%</p>
+                <aside class="notes">
+                    Use animation to emphasize each key metric one by one.
+                </aside>
             </section>
 
+            <!-- Slide 4: Code sample -->
             <section>
-                <h2>Code Sample</h2>
+                <h2>Profit Calculation Example</h2>
                 <pre><code class="python">
-# Python example
+# Python example for profit calculation
 revenue = 1200000
 expenses = 950000
 profit = revenue - expenses
 print(profit)
                 </code></pre>
+                <aside class="notes">
+                    Explain the basic revenue-expense-profit calculation using code.
+                </aside>
             </section>
 
+            <!-- Slide 5: Financial equation -->
             <section>
-                <h2>Financial Equation</h2>
+                <h2>Financial Formula</h2>
                 <p>\( \text{Net Profit} = \text{Revenue} - \text{Expenses} \)</p>
+                <aside class="notes">
+                    Highlight the formula that stakeholders can easily understand.
+                </aside>
             </section>
+
         </div>
     </div>
 
+    <!-- RevealJS core -->
     <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+
+    <!-- Plugins -->
+    <script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="https://unpkg.com/reveal.js/plugin/math/math.js"></script>
+
     <script>
         Reveal.initialize({
             hash: true,
